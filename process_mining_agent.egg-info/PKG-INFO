@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: process-mining-agent
+Version: 0.1.0
+Requires-Dist: pydantic<3,>=2.5
+Requires-Dist: pandas<3,>=2.1
+Requires-Dist: pm4py<3,>=2.7
+Requires-Dist: scikit-learn<2,>=1.4
+Requires-Dist: torch<3,>=2.5
+Requires-Dist: pytest<9,>=8.0
+Requires-Dist: wandb<1,>=0.17
+Requires-Dist: optuna<4,>=3.6

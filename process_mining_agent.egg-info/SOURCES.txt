@@ -1,0 +1,6 @@
+pyproject.toml
+process_mining_agent.egg-info/PKG-INFO
+process_mining_agent.egg-info/SOURCES.txt
+process_mining_agent.egg-info/dependency_links.txt
+process_mining_agent.egg-info/requires.txt
+process_mining_agent.egg-info/top_level.txt
