@@ -3,7 +3,6 @@ Temporal hold-out splitting — the leakage-prevention core of Phase 1.
 Splits by absolute event timestamp, then verifies no case_id spans both splits.
 """
 import pandas as pd
-from datetime import datetime
 
 
 def temporal_split(
@@ -22,7 +21,11 @@ def temporal_split(
     """
     split_dt = pd.Timestamp(split_date)
 
+    # Match timezone-awareness of the actual data — BPI-2017 timestamps are UTC-aware
     case_start = events_df.groupby(case_id_col)[timestamp_col].min()
+    if case_start.dt.tz is not None and split_dt.tz is None:
+        split_dt = split_dt.tz_localize(case_start.dt.tz)
+
     train_case_ids = case_start[case_start < split_dt].index
     test_case_ids = case_start[case_start >= split_dt].index
 
