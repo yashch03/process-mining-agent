@@ -1,0 +1,934 @@
+{
+  "A_Accepted": [
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 25145,
+      "avg_duration": 798.5
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 1317,
+      "avg_duration": 18326.8
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 5,
+      "avg_duration": 194.0
+    }
+  ],
+  "A_Cancelled": [
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 8700,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 84,
+      "avg_duration": 0.1
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 41,
+      "avg_duration": 0.1
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 11,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 3,
+      "avg_duration": 0.1
+    }
+  ],
+  "A_Complete": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 47,
+      "avg_duration": 463.2
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 12,
+      "avg_duration": 541.2
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 241,
+      "avg_duration": 141.8
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 423,
+      "avg_duration": 155.0
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 29,
+      "avg_duration": 42.3
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 2,
+      "avg_duration": 50.8
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 25550,
+      "avg_duration": 474.7
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 45,
+      "avg_duration": 113.9
+    }
+  ],
+  "A_Concept": [
+    {
+      "next_activity": "A_Accepted",
+      "frequency": 7828,
+      "avg_duration": 20370.0
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 18625,
+      "avg_duration": 73699.4
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 14,
+      "avg_duration": 126554.7
+    }
+  ],
+  "A_Create Application": [
+    {
+      "next_activity": "A_Concept",
+      "frequency": 2932,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "A_Submitted",
+      "frequency": 17129,
+      "avg_duration": 0.2
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 6406,
+      "avg_duration": 0.0
+    }
+  ],
+  "A_Denied": [
+    {
+      "next_activity": "O_Refused",
+      "frequency": 3068,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 6,
+      "avg_duration": 0.1
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 8,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 9,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 2,
+      "avg_duration": 0.1
+    }
+  ],
+  "A_Incomplete": [
+    {
+      "next_activity": "A_Denied",
+      "frequency": 6,
+      "avg_duration": 120.9
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 15,
+      "avg_duration": 223.1
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 1,
+      "avg_duration": 371.1
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 502,
+      "avg_duration": 98.1
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 18324,
+      "avg_duration": 160.1
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 1,
+      "avg_duration": 16.6
+    }
+  ],
+  "A_Pending": [
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 2,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 3880,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 10652,
+      "avg_duration": 0.0
+    }
+  ],
+  "A_Submitted": [
+    {
+      "next_activity": "W_Handle leads",
+      "frequency": 17129,
+      "avg_duration": 0.4
+    }
+  ],
+  "A_Validating": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 6,
+      "avg_duration": 249.8
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 9,
+      "avg_duration": 276.6
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 191,
+      "avg_duration": 179.7
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 2,
+      "avg_duration": 105.1
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 17531,
+      "avg_duration": 64.3
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 14643,
+      "avg_duration": 194.0
+    }
+  ],
+  "O_Accepted": [
+    {
+      "next_activity": "A_Pending",
+      "frequency": 14534,
+      "avg_duration": 0.0
+    }
+  ],
+  "O_Cancelled": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 145,
+      "avg_duration": 347522.6
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 22,
+      "avg_duration": 11709.6
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 1,
+      "avg_duration": 76268.5
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 3846,
+      "avg_duration": 660.1
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 589,
+      "avg_duration": 27140.7
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 2,
+      "avg_duration": 63624.7
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 270,
+      "avg_duration": 214.6
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 9,
+      "avg_duration": 21.1
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 8153,
+      "avg_duration": 11998.0
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 788,
+      "avg_duration": 6323.9
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 99,
+      "avg_duration": 12785.9
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 1,
+      "avg_duration": 10397019.1
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 88,
+      "avg_duration": 12301.9
+    }
+  ],
+  "O_Create Offer": [
+    {
+      "next_activity": "O_Created",
+      "frequency": 36131,
+      "avg_duration": 1.1
+    }
+  ],
+  "O_Created": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 60,
+      "avg_duration": 305724.7
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 14,
+      "avg_duration": 659.2
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 581,
+      "avg_duration": 1735.8
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 3274,
+      "avg_duration": 1691.9
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 29975,
+      "avg_duration": 413.5
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 1547,
+      "avg_duration": 953.3
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 45,
+      "avg_duration": 340911.6
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 24,
+      "avg_duration": 97936.7
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 600,
+      "avg_duration": 37839.4
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 3,
+      "avg_duration": 159.6
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 8,
+      "avg_duration": 72627.3
+    }
+  ],
+  "O_Refused": [
+    {
+      "next_activity": "O_Refused",
+      "frequency": 807,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Assess potential fraud",
+      "frequency": 77,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 93,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 146,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 20,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 2732,
+      "avg_duration": 0.0
+    }
+  ],
+  "O_Returned": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 4,
+      "avg_duration": 157316.3
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 20,
+      "avg_duration": 92675.9
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 429,
+      "avg_duration": 20386.7
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 2,
+      "avg_duration": 81.7
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 2,
+      "avg_duration": 8320.7
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 14,
+      "avg_duration": 11110.2
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 1075,
+      "avg_duration": 11639.7
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 18038,
+      "avg_duration": 2066.9
+    }
+  ],
+  "O_Sent (mail and online)": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 499,
+      "avg_duration": 2397699.6
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 8,
+      "avg_duration": 397213.1
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 1,
+      "avg_duration": 189238.5
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 297,
+      "avg_duration": 23707.9
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 348,
+      "avg_duration": 399515.6
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 80,
+      "avg_duration": 279247.0
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 2629,
+      "avg_duration": 0.1
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 1,
+      "avg_duration": 40.8
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 2890,
+      "avg_duration": 383989.3
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 646,
+      "avg_duration": 188703.2
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 25979,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 40,
+      "avg_duration": 85823.7
+    }
+  ],
+  "O_Sent (online only)": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 43,
+      "avg_duration": 2205789.7
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 1,
+      "avg_duration": 72358.8
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 2,
+      "avg_duration": 133951.6
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 24,
+      "avg_duration": 28406.1
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 77,
+      "avg_duration": 312602.0
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 88,
+      "avg_duration": 112740.5
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 1,
+      "avg_duration": 13.0
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 75,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 250,
+      "avg_duration": 511990.9
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 707,
+      "avg_duration": 103345.3
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 370,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 21,
+      "avg_duration": 164185.9
+    }
+  ],
+  "W_Assess potential fraud": [
+    {
+      "next_activity": "A_Denied",
+      "frequency": 77,
+      "avg_duration": 13351.6
+    },
+    {
+      "next_activity": "W_Assess potential fraud",
+      "frequency": 2265,
+      "avg_duration": 37389.6
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 9,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 6,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Handle leads",
+      "frequency": 20,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 138,
+      "avg_duration": 0.0
+    }
+  ],
+  "W_Call after offers": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 7189,
+      "avg_duration": 1988855.2
+    },
+    {
+      "next_activity": "A_Complete",
+      "frequency": 26349,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 72,
+      "avg_duration": 266914.8
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 2,
+      "avg_duration": 1235.7
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 173,
+      "avg_duration": 270825.5
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 3321,
+      "avg_duration": 486614.9
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 12,
+      "avg_duration": 142347.0
+    },
+    {
+      "next_activity": "W_Assess potential fraud",
+      "frequency": 9,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 97614,
+      "avg_duration": 163913.6
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 26,
+      "avg_duration": 599699.2
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 18377,
+      "avg_duration": 0.0
+    }
+  ],
+  "W_Call incomplete files": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 746,
+      "avg_duration": 62732.2
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 140,
+      "avg_duration": 55114.8
+    },
+    {
+      "next_activity": "A_Incomplete",
+      "frequency": 18849,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 3751,
+      "avg_duration": 479214.7
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 1212,
+      "avg_duration": 4130.4
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 1504,
+      "avg_duration": 71972.2
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 539,
+      "avg_duration": 185979.4
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 6,
+      "avg_duration": 84371.7
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 12,
+      "avg_duration": 11355.9
+    },
+    {
+      "next_activity": "W_Assess potential fraud",
+      "frequency": 10,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 5,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 93259,
+      "avg_duration": 46632.4
+    },
+    {
+      "next_activity": "W_Personal Loan collection",
+      "frequency": 1,
+      "avg_duration": 11525807.2
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 14001,
+      "avg_duration": 0.0
+    }
+  ],
+  "W_Complete application": [
+    {
+      "next_activity": "A_Accepted",
+      "frequency": 18610,
+      "avg_duration": 33038.5
+    },
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 34,
+      "avg_duration": 342944.1
+    },
+    {
+      "next_activity": "A_Concept",
+      "frequency": 23535,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 8,
+      "avg_duration": 18268.1
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 43,
+      "avg_duration": 86394.1
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 1351,
+      "avg_duration": 55446.9
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 494,
+      "avg_duration": 7637.0
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 12,
+      "avg_duration": 6878.3
+    },
+    {
+      "next_activity": "W_Assess potential fraud",
+      "frequency": 7,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 26349,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 53842,
+      "avg_duration": 25240.4
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 25,
+      "avg_duration": 398169.3
+    }
+  ],
+  "W_Handle leads": [
+    {
+      "next_activity": "W_Assess potential fraud",
+      "frequency": 20,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 17129,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Handle leads",
+      "frequency": 22523,
+      "avg_duration": 3142.4
+    }
+  ],
+  "W_Personal Loan collection": [
+    {
+      "next_activity": "W_Personal Loan collection",
+      "frequency": 19,
+      "avg_duration": 1639566.0
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 1,
+      "avg_duration": 0.0
+    }
+  ],
+  "W_Shortened completion ": [
+    {
+      "next_activity": "A_Accepted",
+      "frequency": 29,
+      "avg_duration": 23900.4
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 3,
+      "avg_duration": 37629.0
+    },
+    {
+      "next_activity": "O_Sent (mail and online)",
+      "frequency": 2,
+      "avg_duration": 107.0
+    },
+    {
+      "next_activity": "W_Call after offers",
+      "frequency": 68,
+      "avg_duration": 127563.9
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 1,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Complete application",
+      "frequency": 12,
+      "avg_duration": 40428.8
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 116,
+      "avg_duration": 21837.5
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 2,
+      "avg_duration": 1022.6
+    }
+  ],
+  "W_Validate application": [
+    {
+      "next_activity": "A_Cancelled",
+      "frequency": 66,
+      "avg_duration": 114192.4
+    },
+    {
+      "next_activity": "A_Denied",
+      "frequency": 2704,
+      "avg_duration": 95284.1
+    },
+    {
+      "next_activity": "A_Validating",
+      "frequency": 32382,
+      "avg_duration": 0.6
+    },
+    {
+      "next_activity": "O_Accepted",
+      "frequency": 10142,
+      "avg_duration": 64489.7
+    },
+    {
+      "next_activity": "O_Cancelled",
+      "frequency": 2602,
+      "avg_duration": 358.4
+    },
+    {
+      "next_activity": "O_Create Offer",
+      "frequency": 91,
+      "avg_duration": 118361.3
+    },
+    {
+      "next_activity": "O_Returned",
+      "frequency": 828,
+      "avg_duration": 47747.1
+    },
+    {
+      "next_activity": "O_Sent (online only)",
+      "frequency": 1,
+      "avg_duration": 25.1
+    },
+    {
+      "next_activity": "W_Assess potential fraud",
+      "frequency": 204,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Call incomplete files",
+      "frequency": 18848,
+      "avg_duration": 0.0
+    },
+    {
+      "next_activity": "W_Personal Loan collection",
+      "frequency": 2,
+      "avg_duration": 871190.9
+    },
+    {
+      "next_activity": "W_Shortened completion ",
+      "frequency": 2,
+      "avg_duration": 9306.4
+    },
+    {
+      "next_activity": "W_Validate application",
+      "frequency": 100743,
+      "avg_duration": 40044.4
+    }
+  ]
+}
