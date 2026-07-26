@@ -4,3 +4,4 @@ __pycache__/
 wandb/
 wandb/
 *.egg-info/
+process_mining_agent.egg-info/
