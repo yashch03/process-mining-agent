@@ -1,1 +1,3 @@
-
+phase1_ingestion
+phase2_discovery
+phase3_evaluation

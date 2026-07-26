@@ -11,3 +11,6 @@ dependencies = [
     "wandb>=0.17,<1",
     "optuna>=3.6,<4",
 ]
+
+[tool.setuptools]
+packages = ["phase1_ingestion", "phase2_discovery", "phase3_evaluation"]
