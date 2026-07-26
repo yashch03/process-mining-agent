@@ -4,6 +4,8 @@ Logs to W&B, checkpoints per epoch, uses seeds from configs/seeds.yaml.
 """
 import json
 import yaml
+import os
+import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -84,7 +86,6 @@ if __name__ == "__main__":
     with open("configs/seeds.yaml") as f:
         seeds_cfg = yaml.safe_load(f)
 
-    import os
     src = os.environ.get("BPI_DATA_PATH", "data/BPI Challenge 2017.xes")
     log = pm4py.read_xes(src)
     df = pm4py.convert_to_dataframe(log)
@@ -103,12 +104,22 @@ if __name__ == "__main__":
     test_loader = DataLoader(test_dataset, batch_size=64)
     print(f"Train samples: {len(train_dataset)}, Test samples: {len(test_dataset)}")
 
-    seed = seeds_cfg["lstm_seeds"][0]
-    epochs = 2
+    # FULL SPEC RUN — multi-seed, per Section 6.3 of the implementation doc
+    epochs = 5
+    lstm_results, transformer_results = [], []
 
-    lstm_acc = train_one_model(NextEventLSTM, "LSTM", vocab_size, train_loader, test_loader, seed, epochs, device)
-    transformer_acc = train_one_model(NextEventTransformer, "Transformer", vocab_size, train_loader, test_loader, seed, epochs, device)
+    for seed in seeds_cfg["lstm_seeds"]:
+        acc = train_one_model(NextEventLSTM, "LSTM", vocab_size, train_loader, test_loader, seed, epochs, device)
+        lstm_results.append(acc)
 
-    print(f"\nLSTM test accuracy: {lstm_acc:.4f}")
-    print(f"Transformer test accuracy: {transformer_acc:.4f}")
-    print(f"Markov baseline was: 0.667")
+    for seed in seeds_cfg["transformer_seeds"]:
+        acc = train_one_model(NextEventTransformer, "Transformer", vocab_size, train_loader, test_loader, seed, epochs, device)
+        transformer_results.append(acc)
+
+    lstm_mean, lstm_std = np.mean(lstm_results), np.std(lstm_results)
+    transformer_mean, transformer_std = np.mean(transformer_results), np.std(transformer_results)
+
+    print(f"\n=== FINAL RESULTS (mean ± std across {len(lstm_results)} seeds) ===")
+    print(f"LSTM test accuracy:        {lstm_mean:.4f} ± {lstm_std:.4f}  (seeds: {lstm_results})")
+    print(f"Transformer test accuracy: {transformer_mean:.4f} ± {transformer_std:.4f}  (seeds: {transformer_results})")
+    print(f"Markov baseline:           0.667")
