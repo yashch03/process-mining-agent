@@ -84,7 +84,8 @@ if __name__ == "__main__":
     with open("configs/seeds.yaml") as f:
         seeds_cfg = yaml.safe_load(f)
 
-    src = "/kaggle/input/datasets/yashch03/bpi-challenge-2017/BPI Challenge 2017.xes"
+    import os
+    src = os.environ.get("BPI_DATA_PATH", "data/BPI Challenge 2017.xes")
     log = pm4py.read_xes(src)
     df = pm4py.convert_to_dataframe(log)
     df = df.rename(columns={
