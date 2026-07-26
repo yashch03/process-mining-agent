@@ -13,4 +13,4 @@ dependencies = [
 ]
 
 [tool.setuptools]
-packages = ["phase1_ingestion", "phase2_discovery", "phase3_evaluation"]
+packages = ["phase1_ingestion", "phase2_discovery", "phase3_evaluation", "phase4_agent", "phase4_agent.shielding"]
