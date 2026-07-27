@@ -1,7 +1,6 @@
-data/
-__pycache__/
-*.pyc
-wandb/
-wandb/
 *.egg-info/
+*.pyc
+__pycache__/
+data/
 process_mining_agent.egg-info/
+wandb/
