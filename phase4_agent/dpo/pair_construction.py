@@ -11,12 +11,14 @@ from phase4_agent.shielding.graph_verifier import shield_score, load_process_gra
 
 
 def generate_candidates(observation, task_goal, n_candidates=3):
-    """Generate multiple candidate actions by sampling the model with temperature."""
+    """Generate multiple diverse candidate actions using varied temperature."""
     candidates = []
-    for _ in range(n_candidates):
-        raw = agent_step(observation, task_goal)
+    temperatures = [0.3, 0.7, 1.0]
+    for i in range(n_candidates):
+        temp = temperatures[i % len(temperatures)]
+        raw = agent_step(observation, task_goal, temperature=temp)
         candidates.append(parse_action(raw))
-    return list(set(candidates))  # dedupe identical candidates
+    return list(set(candidates))
 
 
 def build_preference_pairs(task_id, n_trials=3, headless=True):

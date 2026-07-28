@@ -20,7 +20,7 @@ click(bid="123")   OR   fill(bid="123", value="text")   OR   send_msg_to_user("d
 No explanation, just the action."""
 
 
-def agent_step(observation: dict, task_goal: str, model: str = "z-ai/glm-5.2", max_retries: int = 4) -> str:
+def agent_step(observation: dict, task_goal: str, model: str = "z-ai/glm-5.2", max_retries: int = 4, temperature: float = 0.2) -> str:
     axtree_obj = observation.get("axtree_object")
     axtree = flatten_axtree_to_str(axtree_obj)[:4000] if axtree_obj else "(no page content available)"
 
@@ -32,7 +32,7 @@ def agent_step(observation: dict, task_goal: str, model: str = "z-ai/glm-5.2", m
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": f"Goal: {task_goal}\n\nPage:\n{axtree}"},
                 ],
-                temperature=0.2,
+                temperature=temperature,
             )
             return response.choices[0].message.content.strip()
         except openai.RateLimitError:
