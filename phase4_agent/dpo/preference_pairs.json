@@ -1,0 +1,56 @@
+[
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select Ml and click Submit.",
+    "chosen": "click(bid=\"21\")",
+    "rejected": "click(bid=\"26\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select Ml and click Submit.",
+    "chosen": "click(bid=\"24\")",
+    "rejected": "click(bid=\"34\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select y4D, 5bGg and click Submit.",
+    "chosen": "click(bid=\"21\")",
+    "rejected": "click(bid=\"31\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select y4D, 5bGg and click Submit.",
+    "chosen": "click(bid=\"27\")",
+    "rejected": "click(bid=\"32\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select y4D, 5bGg and click Submit.",
+    "chosen": "click(bid=\"30\")",
+    "rejected": "click(bid=\"40\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select nothing and click Submit.",
+    "chosen": "click(bid=\"24\")",
+    "rejected": "click(bid=\"14\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-button",
+    "context": "Goal: Click on the \"previous\" button.",
+    "chosen": "click(bid=\"16\")",
+    "rejected": "click(bid=\"11\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-button",
+    "context": "Goal: Click on the \"Yes\" button.",
+    "chosen": "click(bid=\"16\")",
+    "rejected": "click(bid=\"26\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-button",
+    "context": "Goal: Click on the \"Previous\" button.",
+    "chosen": "click(bid=\"16\")",
+    "rejected": "click(bid=\"26\")"
+  }
+]
