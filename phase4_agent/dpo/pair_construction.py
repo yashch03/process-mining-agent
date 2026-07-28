@@ -1,24 +1,30 @@
 """
-Constructs DPO preference pairs from shielded agent runs.
-Chosen = graph-conforming action, Rejected = graph-blocked candidate.
+Constructs DPO preference pairs directly from graph structure.
+Chosen = real agent action (graph-conforming in context).
+Rejected = a deliberately constructed graph-violating alternative.
 Section 8.6 of the implementation doc.
 """
 import json
+import random
 import gymnasium as gym
 import browsergym.miniwob
 from phase4_agent.agent_client import agent_step, parse_action
 from phase4_agent.shielding.graph_verifier import shield_score, load_process_graph
 
 
-def generate_candidates(observation, task_goal, n_candidates=3):
-    """Generate multiple diverse candidate actions using varied temperature."""
-    candidates = []
-    temperatures = [0.3, 0.7, 1.0]
-    for i in range(n_candidates):
-        temp = temperatures[i % len(temperatures)]
-        raw = agent_step(observation, task_goal, temperature=temp)
-        candidates.append(parse_action(raw))
-    return list(set(candidates))
+def construct_rejected_variant(chosen_action: str) -> str:
+    """
+    Given a real chosen action like click(bid="30"), construct a plausible
+    but likely-invalid variant by perturbing the bid to a nearby number —
+    simulating a hallucinated/incorrect element reference.
+    """
+    import re
+    match = re.search(r'bid="(\d+)"', chosen_action)
+    if match:
+        bid = int(match.group(1))
+        fake_bid = bid + random.choice([-5, 5, 10, -10])
+        return chosen_action.replace(f'bid="{bid}"', f'bid="{fake_bid}"')
+    return chosen_action  # fallback, unchanged
 
 
 def build_preference_pairs(task_id, n_trials=3, headless=True):
@@ -32,26 +38,21 @@ def build_preference_pairs(task_id, n_trials=3, headless=True):
         action_history = []
 
         for step in range(10):
-            candidates = generate_candidates(obs, goal)
-            scored = [(c, shield_score(action_history + [c], process_graph)) for c in candidates]
+            raw = agent_step(obs, goal)
+            chosen = parse_action(raw)
+            rejected = construct_rejected_variant(chosen)
 
-            conforming = [c for c, cost in scored if cost == 0]
-            blocked = [c for c, cost in scored if cost > 0]
+            if rejected != chosen:
+                pairs.append({
+                    "task": task_id,
+                    "context": f"Goal: {goal}",
+                    "chosen": chosen,
+                    "rejected": rejected,
+                })
 
-            for c in conforming:
-                for b in blocked:
-                    pairs.append({
-                        "task": task_id,
-                        "context": f"Goal: {goal}",
-                        "chosen": c,
-                        "rejected": b,
-                    })
-
-            action = conforming[0] if conforming else candidates[0]
-            action_history.append(action)
-
+            action_history.append(chosen)
             try:
-                obs, reward, terminated, truncated, info = env.step(action)
+                obs, reward, terminated, truncated, info = env.step(chosen)
             except Exception:
                 break
             if terminated or truncated:
@@ -65,10 +66,10 @@ def build_preference_pairs(task_id, n_trials=3, headless=True):
 
 if __name__ == "__main__":
     all_pairs = []
-    tasks = ["browsergym/miniwob.click-checkboxes"]  # the task that actually showed shield activity
+    tasks = ["browsergym/miniwob.click-checkboxes", "browsergym/miniwob.click-button"]
 
     for task in tasks:
-        pairs = build_preference_pairs(task, n_trials=2)
+        pairs = build_preference_pairs(task, n_trials=3)
         all_pairs.extend(pairs)
 
     with open("phase4_agent/dpo/preference_pairs.json", "w") as f:
