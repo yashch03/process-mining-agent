@@ -52,5 +52,113 @@
     "context": "Goal: Click on the \"Previous\" button.",
     "chosen": "click(bid=\"16\")",
     "rejected": "click(bid=\"26\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select 9OV5d, hqC, QRZW, JUJ and click Submit.",
+    "chosen": "click(bid=\"18\")",
+    "rejected": "click(bid=\"8\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select 9OV5d, hqC, QRZW, JUJ and click Submit.",
+    "chosen": "click(bid=\"27\")",
+    "rejected": "click(bid=\"37\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select 9OV5d, hqC, QRZW, JUJ and click Submit.",
+    "chosen": "click(bid=\"30\")",
+    "rejected": "click(bid=\"35\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select 9OV5d, hqC, QRZW, JUJ and click Submit.",
+    "chosen": "click(bid=\"33\")",
+    "rejected": "click(bid=\"38\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select 9OV5d, hqC, QRZW, JUJ and click Submit.",
+    "chosen": "click(bid=\"36\")",
+    "rejected": "click(bid=\"41\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select nothing and click Submit.",
+    "chosen": "click(bid=\"24\")",
+    "rejected": "click(bid=\"34\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select hwGQlsR, KZS, 9knK, Sc3tnq and click Submit.",
+    "chosen": "click(bid=\"18\")",
+    "rejected": "click(bid=\"28\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select hwGQlsR, KZS, 9knK, Sc3tnq and click Submit.",
+    "chosen": "click(bid=\"21\")",
+    "rejected": "click(bid=\"31\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select hwGQlsR, KZS, 9knK, Sc3tnq and click Submit.",
+    "chosen": "click(bid=\"24\")",
+    "rejected": "click(bid=\"19\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select hwGQlsR, KZS, 9knK, Sc3tnq and click Submit.",
+    "chosen": "click(bid=\"27\")",
+    "rejected": "click(bid=\"17\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select hwGQlsR, KZS, 9knK, Sc3tnq and click Submit.",
+    "chosen": "click(bid=\"30\")",
+    "rejected": "click(bid=\"25\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select alh4TN6, CfOK and click Submit.",
+    "chosen": "click(bid=\"18\")",
+    "rejected": "click(bid=\"23\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select alh4TN6, CfOK and click Submit.",
+    "chosen": "click(bid=\"27\")",
+    "rejected": "click(bid=\"32\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-checkboxes",
+    "context": "Goal: Select alh4TN6, CfOK and click Submit.",
+    "chosen": "click(bid=\"30\")",
+    "rejected": "click(bid=\"20\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-button",
+    "context": "Goal: Click on the \"submit\" button.",
+    "chosen": "click(bid=\"14\")",
+    "rejected": "click(bid=\"24\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-button",
+    "context": "Goal: Click on the \"Yes\" button.",
+    "chosen": "click(bid=\"12\")",
+    "rejected": "click(bid=\"22\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-button",
+    "context": "Goal: Click on the \"No\" button.",
+    "chosen": "click(bid=\"15\")",
+    "rejected": "click(bid=\"25\")"
+  },
+  {
+    "task": "browsergym/miniwob.click-button",
+    "context": "Goal: Click on the \"okay\" button.",
+    "chosen": "click(bid=\"17\")",
+    "rejected": "click(bid=\"22\")"
   }
 ]
