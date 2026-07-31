@@ -1,0 +1,15 @@
+{
+  "task": "browsergym/miniwob.click-checkboxes-large",
+  "seeds_tested": [
+    1,
+    2,
+    3
+  ],
+  "rewards": [
+    0,
+    1.0,
+    1.0
+  ],
+  "success_rate": 0.6666666666666666,
+  "note": "Run interrupted by rate limit after seed 3. First genuine failure case found (seed 1) \u2014 this task is meaningfully harder than click-test/click-checkboxes, which both showed 100% success."
+}
