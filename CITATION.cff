@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you reference this work, please cite it as below."
+title: "Enterprise Process Discovery & Conformance-Guided Web Agents"
+authors:
+  - name: "Yash Choudhary"
+  - name: "Yuvraj Singh"
+date-released: 2026-08-02
+url: "https://github.com/yashch03/process-mining-agent"
